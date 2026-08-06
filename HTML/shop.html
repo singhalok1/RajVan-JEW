@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop RajVan Jewelry | Personalized Jewellery Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        Free shipping on personalized orders above Rs. 999 | Custom name jewellery now live
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo" aria-label="RajVan Jewelry home">RAJVAN</a>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div class="shop-hero-content">
+                <span class="eyebrow">RajVan Personalized Collection</span>
+                <h1>Shop Personalized Jewellery</h1>
+                <p>Explore custom name pendants, custom name bangles, bangles, chains, and earrings crafted for meaningful everyday styling.</p>
+            </div>
+        </section>
+
+        <section class="shop-section" aria-labelledby="shop-title">
+            <div class="shop-heading">
+                <div>
+                    <span class="eyebrow">Premium Personal Picks</span>
+                    <h2 id="shop-title">Personalized Collection</h2>
+                </div>
+                <p><span id="product-count">12</span> products found</p>
+            </div>
+
+            <div class="shop-controls">
+                <label class="search-control">
+                    <span>Search</span>
+                    <input type="search" id="product-search" placeholder="Search personalized jewellery...">
+                </label>
+
+                <div class="filter-control" aria-label="Filter products by category">
+                    <button type="button" class="filter-btn active" data-category="all">All</button>
+                    <button type="button" class="filter-btn" data-category="Custom Name Pendants">Custom Name Pendants</button>
+                    <button type="button" class="filter-btn" data-category="Bangles">Bangles</button>
+                    <button type="button" class="filter-btn" data-category="Custom Name Bangles">Custom Name Bangles</button>
+                    <button type="button" class="filter-btn" data-category="Chains">Chains</button>
+                    <button type="button" class="filter-btn" data-category="Earrings">Earrings</button>
+                </div>
+
+                <label class="sort-control">
+                    <span>Sort</span>
+                    <select id="sort-products">
+                        <option value="featured">Featured</option>
+                        <option value="low-high">Price Low to High</option>
+                        <option value="high-low">Price High to Low</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="shop-product-grid" id="shop-product-grid">
+                <article class="product-card shop-product-card" data-name="Gold Hoop Earrings" data-category="Earrings" data-price="499">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80" alt="Gold hoop earrings">
+                        <span class="product-tag">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Earrings</span>
+                        <h3>Gold Hoop Earrings</h3>
+                        <p>Rs. 499</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Pearl Drop Earrings" data-category="Earrings" data-price="649">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80" alt="Pearl drop earrings">
+                        <span class="product-tag">New</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Earrings</span>
+                        <h3>Pearl Drop Earrings</h3>
+                        <p>Rs. 649</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Minimal Everyday Chain" data-category="Chains" data-price="899">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80" alt="Minimal everyday chain">
+                        <span class="product-tag">Trending</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chains</span>
+                        <h3>Minimal Everyday Chain</h3>
+                        <p>Rs. 899</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Custom Gold Name Pendant" data-category="Custom Name Pendants" data-price="1299">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80" alt="Custom gold name pendant">
+                        <span class="product-tag">Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Custom Name Pendants</span>
+                        <h3>Custom Gold Name Pendant</h3>
+                        <p>Rs. 1299</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Rose Gold Name Pendant" data-category="Custom Name Pendants" data-price="999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&w=900&q=80" alt="Rose gold name pendant">
+                        <span class="product-tag">Custom</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Custom Name Pendants</span>
+                        <h3>Rose Gold Name Pendant</h3>
+                        <p>Rs. 999</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Silver Script Name Pendant" data-category="Custom Name Pendants" data-price="1099">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80" alt="Silver script name pendant">
+                        <span class="product-tag">Personalized</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Custom Name Pendants</span>
+                        <h3>Silver Script Name Pendant</h3>
+                        <p>Rs. 1099</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Classic Gold Bangles" data-category="Bangles" data-price="799">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=80" alt="Classic gold bangles">
+                        <span class="product-tag">Festive</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Bangles</span>
+                        <h3>Classic Gold Bangles</h3>
+                        <p>Rs. 799</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Stone Studded Bangles" data-category="Bangles" data-price="999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608042314453-ae338d80c427?auto=format&fit=crop&w=900&q=80" alt="Stone studded bangles">
+                        <span class="product-tag">Limited</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Bangles</span>
+                        <h3>Stone Studded Bangles</h3>
+                        <p>Rs. 999</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Custom Name Bangle Gold" data-category="Custom Name Bangles" data-price="1299">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=900&q=80" alt="Custom name bangle gold">
+                        <span class="product-tag">Custom</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Custom Name Bangles</span>
+                        <h3>Custom Name Bangle Gold</h3>
+                        <p>Rs. 1299</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Custom Name Bangle Rose Gold" data-category="Custom Name Bangles" data-price="1399">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80" alt="Custom rose gold name bangle">
+                        <span class="product-tag">Made To Order</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Custom Name Bangles</span>
+                        <h3>Custom Name Bangle Rose Gold</h3>
+                        <p>Rs. 1399</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Layered Personal Chain" data-category="Chains" data-price="799">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80" alt="Layered personal chain">
+                        <span class="product-tag">Chains</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chains</span>
+                        <h3>Layered Personal Chain</h3>
+                        <p>Rs. 799</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card shop-product-card" data-name="Rose Gold Hoop Earrings" data-category="Earrings" data-price="399">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=900&q=80" alt="Rose gold hoop earrings">
+                        <span class="product-tag">Daily Wear</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Earrings</span>
+                        <h3>Rose Gold Hoop Earrings</h3>
+                        <p>Rs. 399</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+
+            <p class="empty-message" id="empty-message">No products found. Try another search or category.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">RAJVAN</a>
+            <p>Premium personalized jewellery crafted for names, memories, everyday shine, and meaningful gifting.</p>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h3>Shop</h3>
+                <a href="custom-pendant.html">Custom Name Pendants</a>
+                <a href="custom-bangle.html">Custom Name Bangles</a>
+                <a href="shop.html">Bangles, Chains & Earrings</a>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <a href="contact.html">Shipping</a>
+                <a href="contact.html">Returns</a>
+                <a href="contact.html">Care Guide</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright 2026 RajVan Jewelry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | RajVan Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        Free shipping on orders above Rs. 999 | New festive styles just arrived
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo" aria-label="RajVan Jewelry home">RAJVAN</a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-page">
+            <div class="cart-heading">
+                <span class="eyebrow">Your Selection</span>
+                <h1>Shopping Cart</h1>
+                <p>Review your RajVan pieces before checkout.</p>
+            </div>
+
+            <div class="cart-empty" id="cart-empty">
+                <h2>Your Cart is Empty</h2>
+                <p>Looks like you have not added any jewelry yet.</p>
+                <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+
+            <div class="cart-layout" id="cart-layout">
+                <div class="cart-items" id="cart-items"></div>
+
+                <aside class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <strong id="cart-subtotal">Rs. 0</strong>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <strong id="cart-delivery">Free</strong>
+                    </div>
+                    <div class="summary-row grand">
+                        <span>Grand Total</span>
+                        <strong id="cart-grand-total">Rs. 0</strong>
+                    </div>
+                    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+                    <a href="shop.html" class="continue-link">Continue Shopping</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">RAJVAN</a>
+            <p>Premium imitation jewelry for modern celebrations, everyday polish, and timeless gifting.</p>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h3>Shop</h3>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="shop.html">Gift Picks</a>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <a href="contact.html">Shipping</a>
+                <a href="contact.html">Returns</a>
+                <a href="contact.html">Care Guide</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2026 RajVan Jewelry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

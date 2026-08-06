@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Name Bangle | RajVan Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Bebas+Neue&family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@500;600;700&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Parisienne&family=Pinyon+Script&family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="announcement-bar">Free shipping on orders above Rs. 999 | New festive styles just arrived</div>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo" aria-label="RajVan Jewelry home">RAJVAN</a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-hero custom-hero">
+            <div class="shop-hero-content">
+                <span class="eyebrow">Personalized Bangles</span>
+                <h1>Create Your Custom Name Bangle</h1>
+                <p>Design a made-for-you name bangle with live preview, premium finish, size, and font options.</p>
+            </div>
+        </section>
+
+        <section class="custom-builder">
+            <div class="pendant-preview-card">
+                <span class="eyebrow">Live Preview</span>
+                <div class="pendant-preview bangle-preview custom-product-preview" id="bangle-preview">
+                    <div class="bangle-ring"></div>
+                    <div class="pendant-name-preview font-great-vibes" id="bangle-preview-name">RajVan</div>
+                    <div class="preview-meta">
+                        <span id="bangle-preview-color">Gold Finish</span>
+                        <span id="bangle-preview-font">Great Vibes</span>
+                    </div>
+                </div>
+                <div class="summary-row grand">
+                    <span>Estimated Price</span>
+                    <strong id="bangle-price">Rs. 1,299</strong>
+                </div>
+                <div class="delivery-grid">
+                    <div><strong>Made specially for you</strong><span>Each bangle is crafted after order confirmation.</span></div>
+                    <div><strong>Dispatch in 5-7 Days</strong><span>Personalized orders need extra finishing time.</span></div>
+                </div>
+            </div>
+
+            <form class="checkout-card custom-form" id="custom-bangle-form">
+                <h2>Customize Your Bangle</h2>
+                <label class="full-field">Name
+                    <input type="text" id="bangle-name" maxlength="12" placeholder="Enter name" required>
+                    <span class="field-note" id="bangle-char-count">0/12</span>
+                </label>
+
+                <div class="option-block">
+                    <h3>Font Selection</h3>
+                    <label class="full-field">Choose Font
+                        <select name="font" id="bangle-font">
+                            <option value="great-vibes" selected>Great Vibes</option>
+                            <option value="allura">Allura</option>
+                            <option value="dancing-script">Dancing Script</option>
+                            <option value="parisienne">Parisienne</option>
+                            <option value="alex-brush">Alex Brush</option>
+                            <option value="pinyon-script">Pinyon Script</option>
+                            <option value="sacramento">Sacramento</option>
+                            <option value="cinzel">Cinzel</option>
+                            <option value="montserrat">Montserrat</option>
+                            <option value="bebas-neue">Bebas Neue</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="option-block">
+                    <h3>Bangle Color</h3>
+                    <div class="option-grid payment-options">
+                        <label class="choice-card"><input type="radio" name="color" value="Gold" checked><span><strong>Gold</strong>Signature RajVan finish</span></label>
+                        <label class="choice-card"><input type="radio" name="color" value="Rose Gold"><span><strong>Rose Gold</strong>Soft warm shine</span></label>
+                        <label class="choice-card"><input type="radio" name="color" value="Silver"><span><strong>Silver</strong>Cool polished tone</span></label>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <label>Bangle Size
+                        <select name="bangleSize" required>
+                            <option>2.2</option>
+                            <option selected>2.4</option>
+                            <option>2.6</option>
+                            <option>2.8</option>
+                        </select>
+                    </label>
+                    <label>Bangle Style
+                        <select name="bangleStyle" required>
+                            <option selected>Classic Name Bangle</option>
+                            <option>Open Cuff Name Bangle</option>
+                            <option>Stone Accent Name Bangle</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="quantity-block">
+                    <h2>Quantity</h2>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn" data-bangle-quantity="decrease">-</button>
+                        <input type="number" id="bangle-quantity" value="1" min="1" max="10" readonly>
+                        <button type="button" class="quantity-btn" data-bangle-quantity="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="custom-actions">
+                    <button type="submit" class="checkout-btn">Add Custom Bangle to Cart</button>
+                    <button type="button" class="checkout-btn buy-now-custom" id="bangle-buy-now">Buy Now</button>
+                </div>
+                <p class="form-message" id="bangle-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">RAJVAN</a>
+            <p>Premium imitation jewelry for modern celebrations, everyday polish, and timeless gifting.</p>
+        </div>
+        <div class="footer-links">
+            <div><h3>Shop</h3><a href="shop.html">New Arrivals</a><a href="shop.html">Best Sellers</a><a href="custom-pendant.html">Custom Pendant</a></div>
+            <div><h3>Company</h3><a href="about.html">About</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a></div>
+            <div><h3>Support</h3><a href="shipping-policy.html">Shipping</a><a href="return-refund-policy.html">Returns</a><a href="privacy-policy.html">Privacy</a></div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2026 RajVan Jewelry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

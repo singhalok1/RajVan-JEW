@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | RajVan Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="announcement-bar">Free shipping on orders above Rs. 999 | New festive styles just arrived</div>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">RAJVAN</a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="account-page" id="my-account-page">
+            <div class="cart-heading">
+                <span class="eyebrow">RajVan Profile</span>
+                <h1>My Account</h1>
+                <p>Manage your orders, wishlist, saved addresses, and profile details.</p>
+            </div>
+
+            <div class="account-dashboard">
+                <article class="checkout-card account-profile">
+                    <h2 id="account-name">Customer</h2>
+                    <p id="account-email">customer@example.com</p>
+                    <p id="account-mobile">0000000000</p>
+                    <button type="button" class="remove-cart-item" id="logout-btn">Logout</button>
+                </article>
+
+                <article class="checkout-card dashboard-card">
+                    <span id="account-orders-count">0</span>
+                    <h3>My Orders</h3>
+                    <p>Track confirmed RajVan purchases.</p>
+                </article>
+
+                <article class="checkout-card dashboard-card">
+                    <span id="account-wishlist-count">0</span>
+                    <h3>Wishlist</h3>
+                    <p>Products saved for later.</p>
+                    <a href="wishlist.html">Open Wishlist</a>
+                </article>
+
+                <article class="checkout-card dashboard-card">
+                    <span id="account-address-count">0</span>
+                    <h3>Saved Addresses</h3>
+                    <p>Address storage ready for backend sync.</p>
+                </article>
+            </div>
+
+            <div class="checkout-layout account-sections">
+                <section class="checkout-card">
+                    <h2>My Orders</h2>
+                    <div id="account-orders"></div>
+                </section>
+                <section class="checkout-card">
+                    <h2>Profile</h2>
+                    <div class="spec-grid account-specs">
+                        <div><span>Name</span><strong id="account-name-copy">Stored in profile card</strong></div>
+                        <div><span>Wishlist</span><strong>Synced with LocalStorage</strong></div>
+                        <div><span>Addresses</span><strong>Ready for saved addresses</strong></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand"><a href="index.html" class="logo">RAJVAN</a><p>Premium imitation jewelry for modern celebrations, everyday polish, and timeless gifting.</p></div>
+        <div class="footer-links"><div><h3>Shop</h3><a href="shop.html">New Arrivals</a><a href="shop.html">Best Sellers</a><a href="custom-pendant.html">Custom Pendant</a></div><div><h3>Company</h3><a href="about.html">About</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a></div><div><h3>Support</h3><a href="contact.html">Shipping</a><a href="contact.html">Returns</a><a href="contact.html">Care Guide</a></div></div>
+        <div class="footer-bottom"><p>Copyright 2026 RajVan Jewelry. All rights reserved.</p></div>
+    </footer>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

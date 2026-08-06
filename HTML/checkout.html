@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | RajVan Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        Free shipping on orders above Rs. 999 | New festive styles just arrived
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo" aria-label="RajVan Jewelry home">RAJVAN</a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout-page">
+            <div class="cart-heading">
+                <span class="eyebrow">Secure Checkout</span>
+                <h1>Complete Your Order</h1>
+                <p>Enter your details and choose delivery and payment preferences.</p>
+            </div>
+
+            <div class="checkout-empty" id="checkout-empty">
+                <h2>Your Cart is Empty</h2>
+                <p>Add products before starting checkout.</p>
+                <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+
+            <form class="checkout-layout" id="checkout-form" novalidate>
+                <div class="checkout-form-panel">
+                    <section class="checkout-card">
+                        <h2>Customer Information</h2>
+                        <div class="form-grid">
+                            <label>Full Name<input type="text" name="fullName" autocomplete="name" required></label>
+                            <label>Mobile Number<input type="tel" name="mobile" autocomplete="tel" required pattern="[0-9]{10}"></label>
+                            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+                        </div>
+                    </section>
+
+                    <section class="checkout-card">
+                        <h2>Shipping Address</h2>
+                        <div class="form-grid">
+                            <label class="full-field">Address<textarea name="address" rows="3" autocomplete="street-address" required></textarea></label>
+                            <label>City<input type="text" name="city" required></label>
+                            <label>State<input type="text" name="state" required></label>
+                            <label>PIN Code<input type="text" name="pin" required pattern="[0-9]{6}"></label>
+                        </div>
+                    </section>
+
+                    <section class="checkout-card">
+                        <h2>Delivery Options</h2>
+                        <div class="option-grid">
+                            <label class="choice-card">
+                                <input type="radio" name="delivery" value="standard" data-fee="0" checked>
+                                <span><strong>Standard Delivery</strong>Free, 4-6 business days</span>
+                            </label>
+                            <label class="choice-card">
+                                <input type="radio" name="delivery" value="express" data-fee="149">
+                                <span><strong>Express Delivery</strong>Rs. 149, 1-2 business days</span>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="checkout-card">
+                        <h2>Payment Method</h2>
+                        <div class="option-grid payment-options">
+                            <label class="choice-card"><input type="radio" name="paymentMethod" value="UPI Payment" required checked><span><strong>UPI Payment</strong>Pay manually using UPI</span></label>
+                            <label class="choice-card"><input type="radio" name="paymentMethod" value="Cash on Delivery"><span><strong>Cash on Delivery (COD)</strong>Pay when the order arrives</span></label>
+                        </div>
+
+                        <div class="upi-payment-panel" id="upi-payment-panel">
+                            <h2>Manual UPI Payment</h2>
+                            <div class="manual-payment-box">
+                                <div class="qr-placeholder">
+                                 <img src="../Images/payment/qr-code.png"alt="RajVan UPI QR Code"class="upi-qr">
+                                </div>
+                                    
+                                <div class="upi-details">
+                                    <div><span>UPI ID</span><strong>aloksingh@kotakbank</strong></div>
+                                    <div><span>Mobile Number</span><strong>+91 9321457477</strong></div>
+                                </div>
+                            </div>
+
+                            <div class="payment-instructions">
+                                <h3>Payment Instructions</h3>
+                                <ol>
+                                    <li>Scan the QR Code or tap Pay with UPI App.</li>
+                                    <li>Complete the payment.</li>
+                                    <li>Upload the payment screenshot (Required).</li>
+                                    <li>Transaction ID is optional.</li>
+                                    <li>Click Place Order.</li>
+                                </ol>
+                            </div>
+
+                            <button type="button" class="upi-app-btn" id="upi-app-btn">Pay with UPI App</button>
+                            <p class="field-note">Opens Google Pay, PhonePe, Paytm, BHIM, or any installed UPI app with the order total pre-filled.</p>
+
+                            <div class="form-grid payment-form-grid">
+                                <label>Transaction ID (optional)
+                                    <input type="text" name="transactionId" placeholder="Enter UPI transaction/reference ID">
+                                </label>
+                                <label>Payment Screenshot (required for UPI)
+                                    <input type="file" name="paymentScreenshot" id="payment-screenshot" accept="image/*">
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="checkout-card">
+                        <h2>Gift Order</h2>
+                        <label class="gift-toggle">
+                            <input type="checkbox" name="isGift" id="gift-order-toggle">
+                            <span>This order is a gift</span>
+                        </label>
+
+                        <div class="gift-options is-hidden" id="gift-options">
+                            <h3>Gift Packaging</h3>
+                            <div class="option-grid">
+                                <label class="choice-card">
+                                    <input type="radio" name="giftPackaging" value="Standard RajVan Jewelry Box" data-fee="0" checked>
+                                    <span><strong>Standard RajVan Jewelry Box</strong>Free</span>
+                                </label>
+                                <label class="choice-card">
+                                    <input type="radio" name="giftPackaging" value="Premium Gift Box" data-fee="99">
+                                    <span><strong>Premium Gift Box</strong>+Rs. 99</span>
+                                </label>
+                            </div>
+
+                            <div class="form-grid gift-form-grid">
+                                <label class="full-field">Gift Message
+                                    <textarea name="giftMessage" id="gift-message" rows="3" maxlength="150" placeholder="Write a short message for the recipient"></textarea>
+                                    <span class="field-note" id="gift-message-count">0/150</span>
+                                </label>
+                                <label>Gift Occasion
+                                    <select name="giftOccasion">
+                                        <option value="">Select occasion</option>
+                                        <option>Birthday</option>
+                                        <option>Anniversary</option>
+                                        <option>Wedding</option>
+                                        <option>Valentine's Day</option>
+                                        <option>Raksha Bandhan</option>
+                                        <option>Mother's Day</option>
+                                        <option>Father's Day</option>
+                                        <option>Friendship Day</option>
+                                        <option>Congratulations</option>
+                                        <option>Other</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <label class="gift-toggle">
+                                <input type="checkbox" name="hideInvoice">
+                                <span>Do not include invoice inside the package.</span>
+                            </label>
+                        </div>
+                    </section>
+
+                    <p class="form-message" id="checkout-message"></p>
+                </div>
+
+                <aside class="checkout-summary">
+                    <h2>Order Summary</h2>
+                    <div class="checkout-items" id="checkout-items"></div>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <strong id="checkout-subtotal">Rs. 0</strong>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <strong id="checkout-delivery">Free</strong>
+                    </div>
+                    <div class="summary-row is-hidden" id="checkout-gift-row">
+                        <span>Gift Packaging</span>
+                        <strong id="checkout-gift-fee">Free</strong>
+                    </div>
+                    <div class="summary-row grand">
+                        <span>Order Total</span>
+                        <strong id="checkout-total">Rs. 0</strong>
+                    </div>
+                    <button type="submit" class="place-order-btn">Place Order</button>
+                </aside>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">RAJVAN</a>
+            <p>Premium imitation jewelry for modern celebrations, everyday polish, and timeless gifting.</p>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h3>Shop</h3>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="shop.html">Gift Picks</a>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <a href="contact.html">Shipping</a>
+                <a href="contact.html">Returns</a>
+                <a href="contact.html">Care Guide</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2026 RajVan Jewelry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

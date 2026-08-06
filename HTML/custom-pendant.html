@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Name Pendant | RajVan Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Dancing+Script:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="announcement-bar">Free shipping on orders above Rs. 999 | New festive styles just arrived</div>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo" aria-label="RajVan Jewelry home">RAJVAN</a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-hero custom-hero">
+            <div class="shop-hero-content">
+                <span class="eyebrow">Signature Personalization</span>
+                <h1>Create Your Personalized Name Pendant</h1>
+                <p>Design a made-for-you pendant with your name, preferred finish, chain length, and luxe RajVan detailing.</p>
+            </div>
+        </section>
+
+        <section class="custom-builder">
+            <div class="pendant-preview-card">
+                <span class="eyebrow">Live Preview</span>
+                <div class="pendant-preview custom-product-preview" id="pendant-preview">
+                    <div class="pendant-chain preview-chain"></div>
+                    <div class="pendant-bar"></div>
+                    <div class="pendant-name-preview font-great-vibes" id="pendant-preview-name">RajVan</div>
+                    <div class="preview-meta">
+                        <span id="pendant-preview-color">Gold Finish</span>
+                        <span id="pendant-preview-font">Great Vibes</span>
+                    </div>
+                </div>
+                <div class="summary-row grand">
+                    <span>Estimated Price</span>
+                    <strong id="pendant-price">Rs. 999</strong>
+                </div>
+                <div class="delivery-grid">
+                    <div><strong>Made specially for you</strong><span>Each pendant is crafted after order confirmation.</span></div>
+                    <div><strong>Dispatch in 5-7 Days</strong><span>Personalized orders need extra finishing time.</span></div>
+                </div>
+            </div>
+
+            <form class="checkout-card custom-form" id="custom-pendant-form">
+                <h2>Customize Your Pendant</h2>
+                <div class="option-block">
+                    <h3>Pendant Type</h3>
+                    <div class="option-grid">
+                        <label class="choice-card"><input type="radio" name="pendantType" value="Single Name" checked><span><strong>Single Name</strong>One personalized name</span></label>
+                        <label class="choice-card"><input type="radio" name="pendantType" value="Couple Name"><span><strong>Couple Name</strong>Two names with connector</span></label>
+                    </div>
+                </div>
+
+                <div class="form-grid pendant-name-fields">
+                    <label class="full-field" id="single-name-field">Name
+                        <input type="text" id="pendant-name" maxlength="12" placeholder="Enter name" required>
+                        <span class="field-note" id="pendant-char-count">0/12</span>
+                    </label>
+                    <label class="couple-field is-hidden">Name 1
+                        <input type="text" id="pendant-name-one" maxlength="12" placeholder="Olivia">
+                    </label>
+                    <label class="couple-field is-hidden">Name 2
+                        <input type="text" id="pendant-name-two" maxlength="12" placeholder="Emily">
+                    </label>
+                    <label class="couple-field is-hidden">Connector
+                        <select name="connector" id="pendant-connector">
+                            <option value="Heart">&#10084; Heart</option>
+                            <option value="Infinity">&#8734; Infinity</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="option-block">
+                    <h3>Font Selection</h3>
+                    <label class="full-field">Choose Font
+                        <select name="font" id="pendant-font">
+                            <option value="great-vibes" style="font-family:'Great Vibes',cursive;">Great Vibes</option>
+                            <option value="allura" style="font-family:'Allura',cursive;">Allura</option>
+                            <option value="dancing-script" style="font-family:'Dancing Script',cursive;">Dancing Script</option>
+                            <option value="parisienne" style="font-family:'Parisienne',cursive;">Parisienne</option>
+                            <option value="alex-brush" style="font-family:'Alex Brush',cursive;">Alex Brush</option>
+                            <option value="pinyon-script" style="font-family:'Pinyon Script',cursive;">Pinyon Script</option>
+                            <option value="sacramento" style="font-family:'Sacramento',cursive;">Sacramento</option>
+                            <option value="cinzel" style="font-family:'Cinzel',serif;">Cinzel</option>
+                            <option value="montserrat" style="font-family:'Montserrat',sans-serif;">Montserrat</option>
+                            <option value="bebas-neue" style="font-family:'Bebas Neue',sans-serif;">Bebas Neue</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="option-block">
+                    <h3>Pendant Color</h3>
+                    <div class="option-grid payment-options">
+                        <label class="choice-card"><input type="radio" name="color" value="Gold" checked><span><strong>Gold</strong>Signature RajVan finish</span></label>
+                        <label class="choice-card"><input type="radio" name="color" value="Rose Gold"><span><strong>Rose Gold</strong>Soft warm shine</span></label>
+                        <label class="choice-card"><input type="radio" name="color" value="Silver"><span><strong>Silver</strong>Cool polished tone</span></label>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <label>Chain Type
+                        <select name="chainType" required>
+                            <option>Classic Cable Chain</option>
+                            <option>Box Chain</option>
+                            <option>Rope Chain</option>
+                        </select>
+                    </label>
+                    <label>Chain Length
+                        <select name="chainLength" required>
+                            <option>16 inch</option>
+                            <option>18 inch</option>
+                            <option>20 inch</option>
+                            <option>22 inch</option>
+                        </select>
+                    </label>
+                    <label>Pendant Style
+                        <select name="pendantStyle" required>
+                            <option selected>Classic Name Cutout</option>
+                            <option>Minimal Bar Style</option>
+                            <option>Heart Accent Style</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="quantity-block">
+                    <h2>Quantity</h2>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn" data-pendant-quantity="decrease">-</button>
+                        <input type="number" id="pendant-quantity" value="1" min="1" max="10" readonly>
+                        <button type="button" class="quantity-btn" data-pendant-quantity="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="custom-actions">
+                    <button type="submit" class="checkout-btn">Add Custom Pendant to Cart</button>
+                    <button type="button" class="checkout-btn buy-now-custom" id="pendant-buy-now">Buy Now</button>
+                </div>
+                <p class="form-message" id="pendant-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand"><a href="index.html" class="logo">RAJVAN</a><p>Premium imitation jewelry for modern celebrations, everyday polish, and timeless gifting.</p></div>
+        <div class="footer-links"><div><h3>Shop</h3><a href="shop.html">New Arrivals</a><a href="shop.html">Best Sellers</a><a href="custom-pendant.html">Custom Pendant</a></div><div><h3>Company</h3><a href="about.html">About</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a></div><div><h3>Support</h3><a href="contact.html">Shipping</a><a href="contact.html">Returns</a><a href="contact.html">Care Guide</a></div></div>
+        <div class="footer-bottom"><p>Copyright 2026 RajVan Jewelry. All rights reserved.</p></div>
+    </footer>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
